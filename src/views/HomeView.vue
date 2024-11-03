@@ -18,7 +18,7 @@ export default {
   name: 'HomeView',
   methods : {
     getData(){
-    axios.get('http://localhost:8080/') // axios로 전송시 Data 준비중이라는 문구가 뜸. 자바쪽에서 보내는 데이터. get 안에 '/'로 전송시 index.html이 넘어감. 
+    axios.post('http://localhost:8080/findAll') // axios로 전송시 Data 준비중이라는 문구가 뜸. 자바쪽에서 보내는 데이터. get 안에 '/'로 전송시 index.html이 넘어감. 
     .then((response)=>{
       console.log(response)
     })
